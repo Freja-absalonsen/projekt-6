@@ -3,9 +3,16 @@
 </script>
 
 <template>
-    <h1>Hej</h1>
+    <ul class="menu">
+        <li>Om os</li>
+        <li>Kontakt</li>
+    </ul>
 </template>
 
 <style scoped>
-
+    .menu{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
 </style>
