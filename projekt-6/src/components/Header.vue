@@ -14,5 +14,7 @@
         display: flex;
         flex-direction: column;
         list-style: none;
+        color: #FFFED9;
+        background-color: #362110;
     }
 </style>
