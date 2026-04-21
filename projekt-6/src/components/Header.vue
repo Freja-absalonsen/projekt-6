@@ -6,7 +6,6 @@
     <ul class="menu">
         <li>Om os</li>
         <li>Kontakt</li>
-        <li>dav</li>
     </ul>
 </template>
 
