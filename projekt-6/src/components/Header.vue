@@ -10,7 +10,6 @@
 
 <template>
     <header class="header">
-        <!-- Burger knap -->
         <button
           class="mobile-nav-toggle"
           :aria-expanded="open.toString()"
@@ -23,14 +22,11 @@
           <span class="burger-line" :class="{ open }"></span>
         </button>
 
-        <!-- Overlay (mørk baggrund) -->
         <div v-if="open" class="overlay" @click="toggle"></div>
 
-        <!-- Slide-in menu -->
         <nav id="primary-navigation" class="side-menu" :class="{ open }">
           <ul>
-            <li><a href="#">Hjem</a></li>
-            <li><a href="#">Om</a></li>
+            <li><a href="#">Historie og værdier</a></li>
             <li><a href="#">Kontakt</a></li>
           </ul>
         </nav>
@@ -39,10 +35,10 @@
 
 <style scoped>
 .header{
-    background-color: #362110;
-    height: 64px;
+  background-color: #362110;
+  height: 64px;
 }
-    /* Burger i højre hjørne */
+
 .mobile-nav-toggle {
   position: fixed;
   top: 20px;
@@ -66,7 +62,6 @@
   transition: all 0.3s ease;
 }
 
-/* Burger animation */
 .burger-line.open:nth-child(1) {
   transform: translateY(9.5px) rotate(45deg);
 }
@@ -79,7 +74,6 @@
   transform: translateY(-9.5px) rotate(-45deg);
 }
 
-/* Overlay */
 .overlay {
   position: fixed;
   inset: 0;
@@ -87,7 +81,6 @@
   z-index: 1000;
 }
 
-/* Side menu */
 .side-menu {
   position: fixed;
   top: 0;
@@ -104,12 +97,10 @@
   padding: 80px 20px;
 }
 
-/* Når åben */
 .side-menu.open {
   transform: translateX(0);
 }
 
-/* Menu styling */
 .side-menu ul {
   list-style: none;
   padding: 0;
@@ -120,8 +111,8 @@
 }
 
 a{
-    color: #FFFED9;
-    text-decoration: none;
+  color: #FFFED9;
+  text-decoration: none;
 }
 
 </style>
