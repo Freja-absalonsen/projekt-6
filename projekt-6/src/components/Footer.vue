@@ -1,5 +1,6 @@
 <script setup>
 
+
 </script>
 
 <template>
@@ -43,52 +44,6 @@
 
 <style scoped>
 
-.footer{
-    background-color: #362110;
-    color: #FFFECC;
-    padding: 60px 20px;
-}
 
-.footer-inner {
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.footer-title {
-    text-align: center;
-    font-size: 16px;
-    margin-bottom: 40px;
-}
-
-.footer-grid {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    gap: 40px;
-}
-
-.footer-section {
-    margin-bottom: 30px;
-}
-
-.footer-right{
-    text-align: right;
-}
-
-.footer-section h3 {
-    font-size: 15px;
-    margin-bottom: 5px;
-}
-
-.footer-section p {
-    font-size: 14px;
-    margin: 5px 0;
-}
-
-@media (max-width: 768px) {
-    .footer-grid {
-        flex-direction: row;
-    }
-}
 
 </style>

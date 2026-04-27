@@ -1,0 +1,54 @@
+@use '_color.scss' as c;
+
+*{
+    margin: 0%;
+}
+.footer{
+    background-color: pink;
+    color: c.$color-text;
+    padding: 60px 20px;
+}
+
+.footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.footer-title {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.footer-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-section {
+    margin-bottom: 30px;
+    h3 {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    p {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+}
+
+.footer-right{
+    text-align: right;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .footer-grid {
+        flex-direction: row;
+    }
+}
