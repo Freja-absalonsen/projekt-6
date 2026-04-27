@@ -3,8 +3,161 @@
 *{
     margin: 0%;
 }
+
+// Contact info
+.contact{
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    text-align: center;
+
+    &__title{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    &__description{
+        font-size: 16px;
+        max-width: 600px;
+        margin: 0 auto 20 px auto;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    &__divider{
+        height: 1px;
+        background-color: c.$color-text-secondary;
+        width: 100%;
+        margin: 16px 0;
+    }
+
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    &__item{
+        display: flex;
+    }
+
+    &__text{
+        font-size: 16px;
+        margin: 0;
+    }
+
+    @media (min-width: 768px){
+        padding: 20px 40px;
+    }
+
+}
+
+// Contact form
+
+.form-section{
+    padding: 20px;
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &__input, &__textarea{
+        padding: 12px;
+        border: 1px solid c.$color-text-secondary;
+        border-radius: 6px;
+        background: #eae6cf;
+        font-size: 16px;
+    }
+    
+    &__textarea{
+        min-height: 120px;
+    }
+
+    &__field{
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    } 
+
+    &__row{
+        display:flex;
+        flex-direction: row;
+        gap: 12px;
+
+        .form-section__field{
+            flex: 1;
+            min-width: 0;
+        }
+
+        @media(min-width: 768px){
+            flex-direction: row;
+
+            .form-section__field{
+                flex: 1;
+            }
+        }
+    }
+ 
+    &__error{
+        color: red;
+        margin: 0;
+    }
+
+    &__button{
+        background: #f75c00;
+        color: c.$color-text;
+        border: none;
+        padding: 12px;
+        border-radius: 6px;
+        cursor: pointer;
+        width: 140px;
+        align-self: center;
+        font-size: 12px;
+    }
+}
+
+// Contact time
+
+.hours-section{
+    background-color: c.$color-secondary;
+    width: 100%;
+    padding: 20px 16px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+
+    &__container{
+        width: 100%;
+        max-width: 500px;
+        text-align: center;
+    }
+
+    &__title{
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    &__divider{
+        height: 1px;
+        background-color: c.$color-text-secondary;
+        width: 100%;
+    }
+
+    &__text {
+        margin: 15px 0;
+        &-item{
+            margin: 6px 0;
+            font-size: 16px;
+        }
+    }
+}
+
+// Footer 
 .footer{
-    background-color: pink;
+    background-color: c.$color-primary;
     color: c.$color-text;
     padding: 60px 20px;
 }
@@ -42,10 +195,6 @@
 .footer-right{
     text-align: right;
 }
-
-
-
-
 
 @media (max-width: 768px) {
     .footer-grid {
