@@ -2,6 +2,73 @@
   margin: 0%;
 }
 
+.header {
+  background-color: #362110;
+  height: 64px;
+}
+.header__button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35px;
+  height: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.header__burger-line {
+  height: 3px;
+  width: 100%;
+  background: #FFFED9;
+  transition: all 0.3s ease;
+}
+.header__burger-line.open:nth-child(1) {
+  transform: translateY(9.5px) rotate(45deg);
+}
+.header__burger-line.open:nth-child(2) {
+  opacity: 0;
+}
+.header__burger-line.open:nth-child(3) {
+  transform: translateY(-9.5px) rotate(-45deg);
+}
+.header__overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+.header__side-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background: #362110;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  z-index: 1001;
+  padding: 80px 20px;
+}
+.header__side-menu.open {
+  transform: translateX(0);
+}
+.header__side-menu ul {
+  list-style: none;
+  padding: 0;
+}
+.header__side-menu li {
+  margin-bottom: 20px;
+}
+.header a {
+  color: #FFFED9;
+  text-decoration: none;
+}
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -89,7 +156,7 @@
   margin: 0;
 }
 .form-section__button {
-  background: #f75c00;
+  background: #577448;
   color: #FFFECC;
   border: none;
   padding: 12px;
@@ -127,6 +194,34 @@
 }
 .hours-section__text-item {
   margin: 6px 0;
+  font-size: 16px;
+}
+
+.map-section {
+  text-align: center;
+  padding: 20px;
+}
+.map-section__title {
+  margin-bottom: 16px;
+}
+.map-section__wrapper {
+  background: #F87325;
+  padding: 12px;
+  box-sizing: border-box;
+}
+.map-section__map {
+  height: 200px;
+  width: 100%;
+  border-radius: 4px;
+}
+@media (min-width: 768px) {
+  .map-section__map {
+    width: 400px;
+    height: 250px;
+  }
+}
+.map-section__address {
+  margin-top: 12px;
   font-size: 16px;
 }
 
