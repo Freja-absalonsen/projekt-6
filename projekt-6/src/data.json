@@ -1,0 +1,10 @@
+{
+    "locations": {
+      "bakery": {
+        "name": "Nær mikrobageri",
+        "address": "Overgade 22 5000 Odense",
+        "lat": 55.397467,
+        "lon": 10.391811
+      }
+    }
+  }
