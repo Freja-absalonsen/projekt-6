@@ -107,7 +107,7 @@
     }
 
     &__button{
-        background: #f75c00;
+        background: #577448;
         color: c.$color-text;
         border: none;
         padding: 12px;
@@ -155,10 +155,14 @@
     }
 }
 
-// Contact time
+// Contact map
 .map-section {
     text-align: center;
     padding: 20px;
+
+    &__title{
+        margin-bottom: 16px;
+    }
   
     &__wrapper {
         background: #F87325;

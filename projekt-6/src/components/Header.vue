@@ -26,8 +26,8 @@
 
         <nav id="primary-navigation" class="side-menu" :class="{ open }">
           <ul>
-            <li><a href="#">Historie og værdier</a></li>
-            <li><a href="#">Kontakt</a></li>
+            <li><RouterLink :to="{ name: 'about' }" @click="toggle">Vores historie og værdier</RouterLink></li>
+            <li><RouterLink :to="{ name: 'kontakt' }" @click="toggle">Kontakt</RouterLink></li>
           </ul>
         </nav>
     </header>
