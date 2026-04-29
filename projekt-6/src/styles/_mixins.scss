@@ -1,0 +1,36 @@
+@use "./color" as c;
+@use "./font" as f;
+
+//pink sektion
+@mixin section-pink {
+    background-color: c.$color-secondary;
+    width: 100%;
+    padding: 20px 16px;
+}
+
+@mixin divider {
+    height: 1px;
+    background-color: c.$color-text-primary;
+    width: 100%;
+}
+
+//orange rammer
+@mixin frame-box {
+    background-color: c.$color-quaternary;
+    position: relative;
+    translate: 10px 10px;
+}
+
+//grønne knapper
+@mixin button {
+    background: c.$color-quinary;
+    color: c.$color-text-secondary;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 140px;
+    align-self: center;
+    font-size: f.$font-size-tertiary;
+    font-family: f.$font-primary;
+}

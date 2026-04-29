@@ -1,5 +1,6 @@
 @use '_color.scss' as c;
 @use '_font.scss' as f;
+@use 'mixins' as m;
 
 *{
     margin: 0%;
@@ -292,6 +293,17 @@
         font-family: f.$font-primary;
     }
 }
+
+
+
+
+.our-history {
+    @include m.section-pink
+}
+
+
+
+
 
 // Footer 
 .footer{

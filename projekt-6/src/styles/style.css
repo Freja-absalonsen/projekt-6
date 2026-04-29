@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@400&display=swap");
 * {
   margin: 0%;
 }
@@ -5,12 +6,14 @@
 .header {
   background-color: #362110;
   height: 64px;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
 }
 .header__button {
   position: fixed;
   top: 20px;
   right: 20px;
-  z-index: 2000;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -39,7 +42,6 @@
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.4);
-  z-index: 1000;
 }
 .header__side-menu {
   position: fixed;
@@ -67,6 +69,8 @@
 .header a {
   color: #FFFED9;
   text-decoration: none;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
 }
 
 .contact {
@@ -76,11 +80,13 @@
   text-align: center;
 }
 .contact__title {
-  font-size: 20px;
+  font-size: 28px;
+  font-family: "Indie Flower", cursive;
   margin-bottom: 10px;
 }
 .contact__description {
   font-size: 16px;
+  font-family: "Poppins", sans-serif;
   max-width: 600px;
   margin: 0 auto 20 px auto;
   line-height: 1.5;
@@ -103,6 +109,7 @@
 }
 .contact__text {
   font-size: 16px;
+  font-family: "Poppins", sans-serif;
   margin: 0;
 }
 @media (min-width: 768px) {
@@ -121,13 +128,22 @@
 }
 .form-section__input, .form-section__textarea {
   padding: 12px;
-  border: 1px solid #362110;
+  border: 1px solid #362120;
   border-radius: 6px;
-  background: #eae6cf;
+  background: #FFFBEA;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+.form-section__label {
   font-size: 16px;
+  font-family: "Poppins", sans-serif;
 }
 .form-section__textarea {
   min-height: 120px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
 }
 .form-section__field {
   display: flex;
@@ -152,19 +168,20 @@
   }
 }
 .form-section__error {
-  color: red;
+  color: #9E434A;
   margin: 0;
 }
 .form-section__button {
   background: #577448;
-  color: #FFFECC;
+  color: #FFFED9;
   border: none;
   padding: 12px;
   border-radius: 6px;
   cursor: pointer;
   width: 140px;
   align-self: center;
-  font-size: 12px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
 }
 
 .hours-section {
@@ -181,20 +198,19 @@
   text-align: center;
 }
 .hours-section__title {
-  font-size: 20px;
+  font-size: 24px;
+  font-family: "Indie Flower", cursive;
   margin: 10px 0;
 }
 .hours-section__divider {
   height: 1px;
-  background-color: #362110;
+  background-color: #362120;
   width: 100%;
 }
-.hours-section__text {
-  margin: 15px 0;
-}
-.hours-section__text-item {
+.hours-section-item {
   margin: 6px 0;
   font-size: 16px;
+  font-family: "Poppins", sans-serif;
 }
 
 .map-section {
@@ -203,6 +219,8 @@
 }
 .map-section__title {
   margin-bottom: 16px;
+  font-size: 24px;
+  font-family: "Indie Flower", cursive;
 }
 .map-section__wrapper {
   background: #F87325;
@@ -223,11 +241,18 @@
 .map-section__address {
   margin-top: 12px;
   font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+.our-history {
+  background-color: #FFCDC4;
+  width: 100%;
+  padding: 20px 16px;
 }
 
 .footer {
   background-color: #362110;
-  color: #FFFECC;
+  color: #FFFED9;
   padding: 60px 20px;
 }
 
@@ -238,7 +263,8 @@
 
 .footer-title {
   text-align: center;
-  font-size: 16px;
+  font-size: 20px;
+  font-family: "Indie Flower", cursive;
   margin-bottom: 40px;
 }
 
@@ -253,20 +279,16 @@
   margin-bottom: 30px;
 }
 .footer-section h3 {
-  font-size: 15px;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
   margin-bottom: 5px;
 }
 .footer-section p {
-  font-size: 14px;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
   margin: 5px 0;
 }
 
 .footer-right {
   text-align: right;
-}
-
-@media (max-width: 768px) {
-  .footer-grid {
-    flex-direction: row;
-  }
 }/*# sourceMappingURL=style.css.map */
