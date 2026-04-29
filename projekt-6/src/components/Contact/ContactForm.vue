@@ -48,7 +48,7 @@ function handleSubmit() {
       <input class="form-section__input" v-model="form.name" type="text" placeholder="Navn" />
 
       <div class="form-section__row">
-        <div class="field">
+        <div class="form-section__field">
           <label class="form-section__label">Email</label>
           <input class="form-section__input" v-model="form.email" type="email" placeholder="Email" />
           <p class="form-section__error" v-if="emailError" style="color:red">{{ emailError }}</p>
