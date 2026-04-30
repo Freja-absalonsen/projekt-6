@@ -50,7 +50,9 @@ onMounted(async () => {
     <h2 class="map-section__title">Find os</h2>
 
     <div class="map-section__wrapper">
+      <div class="square-top-right"></div>
       <div id="map" class="map-section__map"></div>
+      <div class="square-bottom-left"></div>
     </div>
 
     <p class="map-section__address">📍 Overgade 22, 5000 Odense</p>

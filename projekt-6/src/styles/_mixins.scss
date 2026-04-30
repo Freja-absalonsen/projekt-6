@@ -33,3 +33,28 @@
     font-size: f.$font-size-tertiary;
     font-family: f.$font-primary;
 }
+
+
+@mixin square-top-right {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background-color: c.$color-quaternary;
+
+  top: -10px;
+  right: -10px;
+
+  z-index: 1;
+}
+
+@mixin square-bottom-left {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background-color: c.$color-quaternary;
+
+  bottom: -10px;
+  left: -10px;
+
+  z-index: 1;
+}

@@ -269,14 +269,22 @@
         font-size: f.$font-size-secondary;
         font-family: f.$font-secondary;
     }
-  
+/*  
     &__wrapper {
         background: c.$color-quaternary;
         padding: 12px;
         box-sizing: border-box;
     }
-  
+ */
+ 
+    &__wrapper {
+        position: relative;
+    }
+    
     &__map {
+        display: block;
+        position: relative;
+        z-index: 2;
         height: 200px;
         width: 100%;
         border-radius: 4px;
@@ -286,7 +294,15 @@
         height: 250px;
       }
     }
-  
+
+    .square-top-right {
+        @include m.square-top-right;
+    }
+
+    .square-bottom-left {
+      @include m.square-bottom-left;
+    }
+
     &__address {
         margin-top: 12px;
         font-size: f.$font-size-tertiary;

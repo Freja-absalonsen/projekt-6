@@ -222,12 +222,22 @@
   font-size: 24px;
   font-family: "Indie Flower", cursive;
 }
+.map-section {
+  /*  
+      &__wrapper {
+          background: c.$color-quaternary;
+          padding: 12px;
+          box-sizing: border-box;
+      }
+   */
+}
 .map-section__wrapper {
-  background: #F87325;
-  padding: 12px;
-  box-sizing: border-box;
+  position: relative;
 }
 .map-section__map {
+  display: block;
+  position: relative;
+  z-index: 2;
   height: 200px;
   width: 100%;
   border-radius: 4px;
@@ -237,6 +247,24 @@
     width: 400px;
     height: 250px;
   }
+}
+.map-section .square-top-right {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background-color: #F87325;
+  top: -10px;
+  right: -10px;
+  z-index: 1;
+}
+.map-section .square-bottom-left {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background-color: #F87325;
+  bottom: -10px;
+  left: -10px;
+  z-index: 1;
 }
 .map-section__address {
   margin-top: 12px;
