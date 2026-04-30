@@ -93,6 +93,83 @@
 
 }
 
+// Home anmeldelser
+.testimonials{
+    padding: 24px;
+    background: c.$color-text-secondary;
+    text-align: center;
+
+    &__title{
+        margin-bottom: 24px;
+        font-size: f.$font-size-primary;
+        font-family: f.$font-secondary;
+    }
+
+    &__slider{
+        overflow: hidden;
+    }
+
+    &__track{
+        display: flex;
+        transition: transform 0.4s ease;
+    }
+
+    &__slide{
+        min-width: 50%;
+        padding: 0 8px;
+    }
+
+    &__card{
+        background: c.$color-text-secondary ;
+        border: 2px solid c.$color-text-tertiary;
+        padding: 24px;
+    }
+
+    &__stars{
+        color: $color-text-tertiary;
+        margin-bottom: 8px;
+    }
+
+    &__text{
+        font-family: f.$font-primary;
+        font-size: f.$font-size-quinary;
+        color: $color-text-tertiary;
+        margin-bottom: 16px;
+    }
+
+    &__author{
+        font-family: f.$font-primary;
+        font-size: f.$font-size-quinary;
+        color: c.$color-text-tertiary;
+        margin-bottom: 16px;
+    }
+
+    &__dots{
+        margin-top: 16px;
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    &__dot{
+        width: 7px;
+        height: 7px;
+        background: c.$color-septenary;
+        border-radius: 50%;
+        cursor: pointer;
+
+        &--active{
+            background: c.$color-quaternary;
+        }
+    }
+    
+    @media (min-width:768px){
+        &__slide{
+            min-width: 33.33%;
+        }
+    }
+
+}
 
 // Contact info
 .contact{
