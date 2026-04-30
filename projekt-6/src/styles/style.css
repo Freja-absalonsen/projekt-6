@@ -246,8 +246,17 @@
 
 .our-history {
   background-color: #FFCDC4;
-  width: 100%;
   padding: 20px 16px;
+}
+.our-history .divider {
+  height: 1px;
+  background-color: #362120;
+  width: 100%;
+}
+.our-history p {
+  background-color: #F87325;
+  position: relative;
+  translate: 10px 10px;
 }
 
 .footer {

@@ -298,7 +298,15 @@
 
 
 .our-history {
-    @include m.section-pink
+    @include m.section-pink;
+
+    .divider {
+        @include m.divider
+    }
+
+    p{
+        @include m.frame-box
+    }
 }
 
 

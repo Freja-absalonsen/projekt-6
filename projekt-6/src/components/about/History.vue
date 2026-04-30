@@ -1,9 +1,9 @@
 <template>
     <section class="our-history">
         <div>
-            <hr>
-                <h2>Vores historie</h2>
-            <hr>
+            <div class="divider"></div>
+            <h2>Vores historie</h2>
+            <div class=" divider"></div>
             <div>
                 <p>
                     Vores rejse begyndte med kærlighed for surdej, godt håndværk og ærlige ingredienser. 
