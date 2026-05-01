@@ -1,11 +1,11 @@
 <script setup>
-import {ref, onMounted, onUnmounted} from 'vue'
+import {ref, computed, onMounted, onUnmounted} from 'vue'
 
 const currentIndex = ref(0)
 
 const testimonials = [
     { text: 'Kvaliteten kan i den grad smages', author:'Maiken'},
-    { text: 'Jeg bliver altid mødt af et stort smil af medarbejderne i bageriet', authot:'Elias'},
+    { text: 'Jeg bliver altid mødt af et stort smil af medarbejderne i bageriet', author:'Elias'},
     { text: 'Bedste surdejsbrød i Odense!', author:'Sofie'},
     { text: 'Fantastisk kaffe og hyggelige stemning', author:'Mikkel'},
     { text: 'Man kan virkelig smage håndværket', author:'Line'},
@@ -13,7 +13,10 @@ const testimonials = [
     { text: 'Lækre kager og altid god service', author:'Camiliia'},
 ]
 
+const slidesPerView = 2
+
 const maxIndex = testimonials.length - slidesPerView
+const totalDots = testimonials.length - slidesPerView + 1
 
 const nextSlide = () => {
     if (currentIndex.value >= maxIndex){
@@ -26,8 +29,6 @@ const nextSlide = () => {
 const goToSlide = (index) => {
     currentIndex.value = index
 }
-
-const slidesPerView = 2
 
 let interval
 
@@ -51,7 +52,7 @@ onUnmounted(() => {
                     <div class="testimonials__card">
                         <div class="testimonials__stars">★★★★★</div>
                         <p class="testimonials__text">"{{ testimonial.text }}"</p>
-                        <p class="testimonials__author">"{{ testimonial.author }}"</p>
+                        <p class="testimonials__author">"@{{ testimonial.author }}"</p>
                     </div>
 
                 </div>
@@ -59,7 +60,7 @@ onUnmounted(() => {
         </div>
 
         <div class="testimonials__dots">
-            <span v-for="(item, index) in testimonials" :key="index" class="testimonials__dot" :class="{ 'testimonials__dot--active': index === currentIndex }" @click="goToSlide(index)"></span>
+            <span v-for="index in totalDots" :key="index" class="testimonials__dot" :class="{ 'testimonials__dot--active': index - 1 === currentIndex }" @click="goToSlide(index - 1)"></span>
         </div>
     </section>
 </template>

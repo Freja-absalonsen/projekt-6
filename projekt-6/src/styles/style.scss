@@ -107,6 +107,7 @@
 
     &__slider{
         overflow: hidden;
+        width: 100%;
     }
 
     &__track{
@@ -116,6 +117,7 @@
 
     &__slide{
         min-width: 50%;
+        flex-shrink: 0;
         padding: 0 8px;
     }
 
@@ -160,12 +162,6 @@
 
         &--active{
             background: c.$color-quaternary;
-        }
-    }
-
-    @media (min-width:768px){
-        &__slide{
-            min-width: 33.33%;
         }
     }
 
@@ -352,8 +348,15 @@
         padding: 12px;
         box-sizing: border-box;
     }
+
+    &__wrapper{
+        position: relative;
+    }
   
     &__map {
+        display: block;
+        position: relative;
+        z-index: 2;
         height: 200px;
         width: 100%;
         border-radius: 4px;
@@ -362,6 +365,14 @@
         width: 400px;
         height: 250px;
       }
+    }
+
+    .squara-top-right{
+        @include m.squara-top-right;
+    }
+
+    .squara-top-left{
+        @include m.squara-top-right
     }
   
     &__address {
