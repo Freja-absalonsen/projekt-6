@@ -1,3 +1,4 @@
+
 <template>
     <section class="contact">
 
@@ -9,10 +10,12 @@
 
         <div class="contact__row">
             <div class="contact-item">
+                <img src="@/assets/contact-phone.svg" alt="Telefon ikon">
                 <p class="contact__text">+45 25 60 21 34</p>
             </div>
     
             <div class="contact-item">
+                <img src="@/assets/contact-mail.svg" alt="Mail ikon">
                 <p class="contact__text">nær@gmail.com</p>
             </div>
         </div>

@@ -55,6 +55,9 @@ onMounted(async () => {
       <div class="square-bottom-left"></div>
     </div>
 
-    <p class="map-section__address">📍 Overgade 22, 5000 Odense</p>
+    <img src="@/assets/contact-phone.svg" alt="Telefon ikon">
+    <p class="map-section__address"> Overgade 22, 5000 Odense</p>
+
+
   </section>
 </template>
