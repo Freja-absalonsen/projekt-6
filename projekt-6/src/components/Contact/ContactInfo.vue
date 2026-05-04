@@ -1,7 +1,7 @@
 <template>
     <section class="contact">
 
-        <h2 class="contact__title">Kontakt</h2>
+        <h1 class="contact__title">Kontakt</h1>
         
         <p class="contact__description">Har du spørgsmål omkring allergener eller lignende, er du velkommen til at række ud på telefon, mail eller kontakte os via formularen nedenfor</p>
 

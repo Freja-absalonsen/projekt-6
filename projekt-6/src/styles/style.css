@@ -3,6 +3,21 @@
   margin: 0%;
 }
 
+h1 {
+  font-size: 28px;
+  font-family: "Indie Flower", cursive;
+}
+
+h2 {
+  font-size: 24px;
+  font-family: "Indie Flower", cursive;
+}
+
+p, a {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
 .header {
   background-color: #362110;
   height: 64px;
@@ -141,8 +156,6 @@
   text-align: center;
 }
 .contact__title {
-  font-size: 28px;
-  font-family: "Indie Flower", cursive;
   margin-bottom: 10px;
 }
 .contact__description {
@@ -259,8 +272,6 @@
   text-align: center;
 }
 .hours-section__title {
-  font-size: 24px;
-  font-family: "Indie Flower", cursive;
   margin: 10px 0;
 }
 .hours-section__divider {
@@ -280,8 +291,6 @@
 }
 .map-section__title {
   margin-bottom: 16px;
-  font-size: 24px;
-  font-family: "Indie Flower", cursive;
 }
 .map-section__wrapper {
   position: relative;
@@ -320,8 +329,6 @@
 }
 .map-section__address {
   margin-top: 12px;
-  font-size: 16px;
-  font-family: "Poppins", sans-serif;
 }
 
 .our-history {
