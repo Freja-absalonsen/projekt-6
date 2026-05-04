@@ -1,9 +1,9 @@
 <template>
-    <section>
-        <div>
-            <h2>Vores historie</h2>
+    <section class="values">
+        <div class="values__title">
+            <h2>Vores værdier</h2>
         </div>
-        <div>
+        <div class="values__content">
             <p>
                 Hver dag bager vi brød med respekt for traditionerne og kærlighed til det gode håndværk. 
                 Vores brød bliver lavet med surdej og lange hævetider.
