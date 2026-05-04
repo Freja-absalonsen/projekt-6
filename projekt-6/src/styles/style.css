@@ -6,21 +6,29 @@
 h1 {
   font-size: 28px;
   font-family: "Indie Flower", cursive;
+  text-align: center;
 }
 
 h2 {
   font-size: 24px;
   font-family: "Indie Flower", cursive;
+  text-align: center;
 }
 
 h3 {
   font-size: 20px;
   font-family: "Indie Flower", cursive;
+  text-align: center;
 }
 
 p, a {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
+}
+
+section {
+  padding: 20px;
+  background-color: #FFFED9;
 }
 
 .header {
@@ -94,6 +102,18 @@ p, a {
   font-family: "Poppins", sans-serif;
 }
 
+.home-info__button {
+  background: #577448;
+  color: #FFFED9;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  align-self: center;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
 .testimonials {
   padding: 24px;
   background: #FFFED9;
@@ -158,7 +178,7 @@ p, a {
 .contact {
   display: flex;
   flex-direction: column;
-  padding: 16px;
+  padding: 20px;
   text-align: center;
 }
 .contact__title {
@@ -186,16 +206,22 @@ p, a {
 }
 .contact__item {
   display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.contact__icon {
+  width: 15px;
+  height: 15px;
 }
 .contact__text {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   margin: 0;
-}
-@media (min-width: 768px) {
-  .contact {
-    padding: 20px 40px;
-  }
+  color: inherit;
+  text-decoration: none;
 }
 
 .form-section {
@@ -308,12 +334,12 @@ p, a {
   height: 200px;
   width: 100%;
   border-radius: 4px;
-}
-@media (min-width: 768px) {
-  .map-section__map {
-    width: 400px;
-    height: 250px;
-  }
+  /*
+    @media (min-width: 768px) {
+      width: 400px;
+      height: 250px;
+    }
+  */
 }
 .map-section .square-top-right {
   position: absolute;
@@ -337,6 +363,44 @@ p, a {
   margin-top: 12px;
 }
 
+.about__wrapper {
+  display: inline-block;
+}
+.about .image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.about__images {
+  display: flex;
+  justify-content: space-between;
+}
+.about img {
+  display: block;
+  position: relative;
+  z-index: 2;
+  width: 48%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about .square-top-right {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  background-color: #F87325;
+  top: -7px;
+  right: -7px;
+  z-index: 1;
+}
+.about .square-bottom-left {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  background-color: #F87325;
+  bottom: -7px;
+  left: -7px;
+  z-index: 1;
+}
+
 .our-history {
   background-color: #FFCDC4;
   padding: 20px 16px;
@@ -346,45 +410,92 @@ p, a {
   background-color: #362120;
   width: 100%;
 }
+.our-history__content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+.our-history__top {
+  display: flex;
+}
+.our-history__wrapper {
+  display: inline-block;
+}
+.our-history .image-wrapper {
+  position: relative;
+  display: flex;
+}
+.our-history img {
+  display: block;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+.our-history .square-top-right {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  background-color: #F87325;
+  top: -7px;
+  right: -7px;
+  z-index: 1;
+}
+.our-history .square-bottom-left {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  background-color: #F87325;
+  bottom: -7px;
+  left: -7px;
+  z-index: 1;
+}
 
 .footer {
   background-color: #362110;
   color: #FFFED9;
-  padding: 60px 20px;
-  margin-top: 40px;
+  padding: 40px 20px;
 }
-
-.footer-inner {
+.footer__inner {
   max-width: 1100px;
   margin: 0 auto;
 }
-
-.footer-title {
+.footer__title {
   text-align: center;
   margin-bottom: 40px;
 }
-
-.footer-grid {
+.footer__grid {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   gap: 40px;
 }
-
-.footer-section {
-  margin-bottom: 30px;
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
-.footer-section h3 {
-  font-size: 14px;
-  font-family: "Poppins", sans-serif;
-  margin-bottom: 5px;
-}
-.footer-section p {
-  font-size: 12px;
-  font-family: "Poppins", sans-serif;
-  margin: 5px 0;
-}
-
-.footer-right {
+.footer__column--right {
   text-align: right;
+  align-items: flex-end;
+}
+.footer__section--report {
+  margin-top: 10px;
+}
+.footer__image {
+  width: 180px;
+  display: block;
+}
+.footer__heading {
+  margin-bottom: 5px;
+  letter-spacing: 0.5px;
+}
+.footer__text {
+  margin: 4px 0;
+}
+.footer__link {
+  color: inherit;
+  text-decoration: none;
+}
+.footer__link:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */

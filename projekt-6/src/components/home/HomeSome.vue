@@ -2,5 +2,7 @@
 </script>
 
 <template>
-    <h2>HEJ</h2>
+    <section>
+        <h2>HEJ</h2>
+    </section>
 </template>

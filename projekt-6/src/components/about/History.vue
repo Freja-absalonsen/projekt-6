@@ -4,12 +4,20 @@
         <h2>Vores historie</h2>
         <div class=" divider"></div>
         <div class="our-history__content">
-            <p>
-                Vores rejse begyndte med kærlighed for surdej, godt håndværk og ærlige ingredienser. 
-                I dag bager vi hver morgen i Overgade – 
-                med respekt for traditioner og lysten til at skabe noget, der smager af mere.
-            </p>
-            <img src="" alt="">
+            <div class="our-history__top">
+                <p>
+                    Vores rejse begyndte med kærlighed for surdej, godt håndværk og ærlige ingredienser. 
+                    I dag bager vi hver morgen i Overgade – 
+                    med respekt for traditioner og lysten til at skabe noget, der smager af mere.
+                </p>
+                <div class="our-history__wrapper">
+                    <div class="image-wrapper">
+                        <div class="square-top-right"></div>
+                        <img src="@/assets/about-trine.jpg" alt="Billede af en smilende, lyshåret kvinde på en cykel.">
+                        <div class="square-bottom-left"></div>
+                    </div>
+                </div>
+            </div>
             <p>
                 Drømmen om et eget sted voksede stille over flere år. 
                 Et sted, hvor vi kunne bage på vores egne præmisser og skabe noget, 

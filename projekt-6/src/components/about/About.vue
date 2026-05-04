@@ -12,8 +12,15 @@
                 Mikrobageriet er ejet af kæresteparret Jesper Lychegaard og Tine Dirckinck-Holmfeld, 
                 som deler en passion for godt brød og ærligt håndværk
             </p>
-            <div class="about__img">
-                
+            <div class="about__wrapper">
+                <div class="image-wrapper">
+                    <div class="square-top-right"></div>
+                        <div class="about__images">
+                            <img src="@/assets/about-gang.jpg" alt="Billede af en smilende, lyshåret kvinde på en cykel.">
+                            <img src="@/assets/about-kanelsnegl.jpg" alt="Billede af en smilende, lyshåret kvinde på en cykel.">
+                        </div>
+                    <div class="square-bottom-left"></div>
+                </div>
             </div>
         </div>
     </section>

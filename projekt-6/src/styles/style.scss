@@ -9,16 +9,19 @@
 h1{
     font-size: f.$font-size-primary;
     font-family: f.$font-secondary;
+    text-align: center;
 }
 
 h2{
     font-size: f.$font-size-secondary;
     font-family: f.$font-secondary;
+    text-align: center;
 }
 
 h3{
     font-size: f.$font-size-h3;
     font-family: f.$font-secondary;
+    text-align: center;
 }
 
 p,a{
@@ -26,6 +29,10 @@ p,a{
     font-family: f.$font-primary;
 }
 
+section{
+    padding: 20px;
+    background-color: c.$color-primary;
+}
 
 //Header
 .header{
@@ -112,6 +119,11 @@ p,a{
     font-family: f.$font-primary;
   }
 
+}
+
+
+.home-info__button{
+    @include m.button; 
 }
 
 // Home anmeldelser
@@ -377,11 +389,12 @@ p,a{
         height: 200px;
         width: 100%;
         border-radius: 4px;
-  
+    /*
       @media (min-width: 768px) {
         width: 400px;
         height: 250px;
       }
+    */
     }
 
     .square-top-right{
@@ -397,7 +410,39 @@ p,a{
     }
 }
 
+.about{
+     &__wrapper{
+        display: inline-block;
+     }
 
+    .image-wrapper {
+        position: relative;
+        display: inline-block;
+    }
+  
+    &__images{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    img {
+        display: block;
+        position: relative;
+        z-index: 2;
+        width: 48%;
+        object-fit: cover
+        
+    }
+
+    .square-top-right{
+        @include m.square-top-right;
+    }
+
+    .square-bottom-left{
+        @include m.square-bottom-left
+    }
+
+}
 
 
 .our-history {
@@ -405,6 +450,40 @@ p,a{
 
     .divider {
         @include m.divider
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    &__top{
+        display: flex;
+    }
+
+    &__wrapper{
+        display: inline-block;
+    }
+
+    .image-wrapper {
+        position: relative;
+        display: flex;
+    }
+  
+    img {
+        display: block;
+        position: relative;
+        z-index: 2;
+        width: 100%;
+    }
+
+    .square-top-right{
+        @include m.square-top-right;
+    }
+
+    .square-bottom-left{
+        @include m.square-bottom-left
     }
 }
 
@@ -415,7 +494,6 @@ p,a{
     background-color: c.$color-tertiary;
     color: c.$color-text-secondary;
     padding: 40px 20px;
-    margin-top: 20px;
 
     &__inner {
         max-width: 1100px;
