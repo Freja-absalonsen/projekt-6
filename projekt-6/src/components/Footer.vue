@@ -1,37 +1,33 @@
-<script setup>
-
-
-</script>
 
 <template>
     <footer class="footer">
-        <div class="footer-inner">
-            <h2 class="footer-title"> NÆR Mikrobageri</h2>
+        <div class="footer__inner">
+            <h2 class="footer__title"> NÆR Mikrobageri</h2>
 
-            <div class="footer-grid">
-                <div class="footer-left">
-                    <div class="footer-section">
-                        <h3 class="section-heading">Kontaktoplysninger</h3>
-                        <p class="section-text">+45 25 60 21 34</p>
-                        <p class="section-text">nær@gmail.com</p>
+            <div class="footer__grid">
+                <div class="footer__column footer__column--left">
+                    <div class="footer__section">
+                        <h3 class="footer__heading">Kontaktoplysninger</h3>
+                        <p class="footer__text"><a href="tel:+4525602134" class="footer__link">+45 25 60 21 34</a></p>
+                        <p class="footer__text"><a href="mailto:nær@gmail.com" class="footer__link">nær@gmail.com</a></p>
                     </div>
 
-                    <div class="footer-section">
-                        <h3 class="section-heading">Adresse</h3>
-                        <p class="section-text">Overgade 22, 5000 Odense</p>
-                        <p class="section-text">CVR:45517748</p>
+                    <div class="footer__section">
+                        <h3 class="footer__heading">Adresse</h3>
+                        <p class="footer__text">Overgade 22, 5000 Odense</p>
+                        <p class="footer__text">CVR: 45517748</p>
                     </div>
                 </div>
 
-                <div class="footer-right">
-                    <div class="footer-section">
-                        <h3 class="section-heading">Åbningstider</h3>
-                        <p class="section-text">Tirsdag - lørdag 7.30-16</p>
-                        <p class="section-text">Søndag - mandag lukket</p>
+                <div class="footer__column footer__column--right">
+                    <div class="footer__section">
+                        <h3 class="footer__heading">Åbningstider</h3>
+                        <p class="footer__text">Tirsdag - lørdag 7.30-16</p>
+                        <p class="footer__text">Søndag - mandag lukket</p>
                     </div>
 
-                    <div class="footer-section report">
-                        <img alt="Kontrol til rapport">
+                    <div class="footer-section footer-section--report">
+                        <img src="@/assets/footer-kontrol.gif" alt="Kontrol til rapport" class="footer__image"> 
                     </div>
                 </div>
 

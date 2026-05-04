@@ -192,7 +192,7 @@ p,a{
 .contact{
     display: flex;
     flex-direction: column;
-    padding: 16px;
+    padding: 20px;
     text-align: center;
 
     &__title{
@@ -224,16 +224,24 @@ p,a{
 
     &__item{
         display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 14px;
+        cursor: pointer;
+        transition: 0.2s ease;
+    }
+
+    &__icon{
+        width: 15px;
+        height: 15px;
     }
 
     &__text{
         font-size: f.$font-size-tertiary;
         font-family: f.$font-primary;
         margin: 0;
-    }
-
-    @media (min-width: 768px){
-        padding: 20px 40px;
+        color: inherit;
+        text-decoration: none;
     }
 
 }
@@ -406,41 +414,67 @@ p,a{
 .footer{
     background-color: c.$color-tertiary;
     color: c.$color-text-secondary;
-    padding: 60px 20px;
-    margin-top: 40px;
-}
+    padding: 40px 20px;
+    margin-top: 20px;
 
-.footer-inner {
-    max-width: 1100px;
-    margin: 0 auto;
-}
+    &__inner {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
 
-.footer-title {
-    text-align: center;
-    margin-bottom: 40px;
-}
+    &__title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
 
-.footer-grid {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    gap: 40px;
-}
+    &__grid {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 40px;
+    }
 
-.footer-section {
-    margin-bottom: 30px;
-    h3 {
-        font-size: f.$font-size-quinary;
-        font-family: f.$font-primary;
+    &__column{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        &--right{
+            text-align: right;
+            align-items: flex-end;
+        }
+    }
+
+    &__section{
+        &--report{
+            margin-top: 10px;
+        }
+    }
+
+    &__image{
+        width: 180px;
+        display: block;
+    }
+
+    &__heading{
         margin-bottom: 5px;
+        letter-spacing: 0.5px;
     }
-    p {
-        font-size: f.$font-size-senary;
-        font-family: f.$font-primary;
-        margin: 5px 0;
+
+    &__text{
+        margin: 4px 0;
     }
+
+    &__link{
+        color: inherit;
+        text-decoration: none;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+
+
 }
 
-.footer-right{
-    text-align: right;
-}
