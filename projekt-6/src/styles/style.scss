@@ -17,7 +17,8 @@ h2{
 }
 
 h3{
-
+    font-size: f.$font-size-h3;
+    font-family: f.$font-secondary;
 }
 
 p,a{
@@ -38,7 +39,7 @@ p,a{
     position: fixed;
     top: 20px;
     right: 20px;
-    
+    z-index: 9999;
   
     display: flex;
     flex-direction: column;
@@ -406,6 +407,7 @@ p,a{
     background-color: c.$color-tertiary;
     color: c.$color-text-secondary;
     padding: 60px 20px;
+    margin-top: 40px;
 }
 
 .footer-inner {
@@ -415,8 +417,6 @@ p,a{
 
 .footer-title {
     text-align: center;
-    font-size: f.$font-size-h3;
-    font-family: f.$font-secondary;
     margin-bottom: 40px;
 }
 
