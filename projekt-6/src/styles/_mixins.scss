@@ -13,12 +13,6 @@
     width: 100%;
 }
 
-//orange rammer
-@mixin frame-box {
-    background-color: c.$color-quaternary;
-    position: relative;
-    translate: 10px 10px;
-}
 
 //grønne knapper
 @mixin button {

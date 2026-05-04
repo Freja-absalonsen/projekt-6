@@ -73,6 +73,67 @@
   font-family: "Poppins", sans-serif;
 }
 
+.testimonials {
+  padding: 24px;
+  background: #FFFED9;
+  text-align: center;
+}
+.testimonials__title {
+  margin-bottom: 24px;
+  font-size: 28px;
+  font-family: "Indie Flower", cursive;
+}
+.testimonials__slider {
+  overflow: hidden;
+  width: 100%;
+}
+.testimonials__track {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+.testimonials__slide {
+  min-width: 50%;
+  flex-shrink: 0;
+  padding: 0 8px;
+}
+.testimonials__card {
+  background: #FFFED9;
+  border: 2px solid #577448;
+  padding: 24px;
+}
+.testimonials__stars {
+  color: #577448;
+  margin-bottom: 8px;
+}
+.testimonials__text {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #577448;
+  margin-bottom: 16px;
+}
+.testimonials__author {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #577448;
+  margin-bottom: 16px;
+}
+.testimonials__dots {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+.testimonials__dot {
+  width: 7px;
+  height: 7px;
+  background: #9E434A;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.testimonials__dot--active {
+  background: #F87325;
+}
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -221,15 +282,6 @@
   margin-bottom: 16px;
   font-size: 24px;
   font-family: "Indie Flower", cursive;
-}
-.map-section {
-  /*  
-      &__wrapper {
-          background: c.$color-quaternary;
-          padding: 12px;
-          box-sizing: border-box;
-      }
-   */
 }
 .map-section__wrapper {
   position: relative;
