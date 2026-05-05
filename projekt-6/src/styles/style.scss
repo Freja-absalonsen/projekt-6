@@ -121,10 +121,34 @@ section{
 
 }
 
+.home-info{
+    display: flex;
+    flex-direction: column;
 
-.home-info__button{
-    @include m.button; 
+    &__image{
+        height: 220px;
+    }
+
+    &__content{
+        padding: 24px;
+    }
+
+    &__title{
+        margin-bottom: 13px;
+    }
+
+    &__text{
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    &__button{
+        @include m.button; 
+    }
+
+
 }
+
 
 // Home anmeldelser
 .testimonials{
@@ -389,12 +413,6 @@ section{
         height: 200px;
         width: 100%;
         border-radius: 4px;
-    /*
-      @media (min-width: 768px) {
-        width: 400px;
-        height: 250px;
-      }
-    */
     }
 
     .square-top-right{
@@ -405,15 +423,37 @@ section{
         @include m.square-bottom-left
     }
   
-    &__address {
-        margin-top: 12px;
+    &__icon{
+        width: 15px;
+        height: 15px;
+        margin-top: 16px;
     }
+
+    &__address-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        text-decoration: none;
+        color: inherit; 
+        transition: 0.2s ease; 
+    }
+
+    &__address:hover{
+        text-decoration: underline;
+    }
+
+    &__icon{
+        width: 20px;
+        height: 20px;
+    }
+
 }
 
 .about{
-     &__wrapper{
+    &__wrapper{
         display: inline-block;
-     }
+    }
 
     .image-wrapper {
         position: relative;
@@ -443,7 +483,6 @@ section{
     }
 
 }
-
 
 .our-history {
     @include m.section-pink;
@@ -488,7 +527,6 @@ section{
 }
 
 
-
 // Footer 
 .footer{
     background-color: c.$color-tertiary;
@@ -530,7 +568,7 @@ section{
     }
 
     &__image{
-        width: 180px;
+        width: 100px;
         display: block;
     }
 
