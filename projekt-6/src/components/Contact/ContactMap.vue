@@ -55,9 +55,9 @@ onMounted(async () => {
       <div class="square-bottom-left"></div>
     </div>
 
-    <img src="@/assets/contact-phone.svg" alt="Telefon ikon" class="map-section__icon">
-    <p class="map-section__address"> Overgade 22, 5000 Odense</p>
-
-
+    <a href="https://www.google.com/maps/place/N%C3%A6r+mikrobageri/@55.3974529,10.3917123,17z/data=!3m1!4b1!4m6!3m5!1s0x464d21624b0f982b:0xc1ec23b5dd1d809b!8m2!3d55.3974529!4d10.3917123!16s%2Fg%2F11z230vr9p?entry=ttu&g_ep=EgoyMDI2MDQyOS4wIKXMDSoASAFQAw%3D%3D" target="blank" class="map-section__address-link" >
+      <img src="@/assets/contact-pin.svg" alt="Lokation ikon" class="map-section__icon">
+      <span class="map-section__address">Overgade 22, 5000 Odense</span>
+    </a>
   </section>
 </template>
