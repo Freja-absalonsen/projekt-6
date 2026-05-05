@@ -121,10 +121,34 @@ section{
 
 }
 
+.home-info{
+    display: flex;
+    flex-direction: column;
 
-.home-info__button{
-    @include m.button; 
+    &__image{
+        height: 220px;
+    }
+
+    &__content{
+        padding: 24px;
+    }
+
+    &__title{
+        margin-bottom: 13px;
+    }
+
+    &__text{
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    &__button{
+        @include m.button; 
+    }
+
+
 }
+
 
 // Home anmeldelser
 .testimonials{
