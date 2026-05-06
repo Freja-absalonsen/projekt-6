@@ -160,25 +160,19 @@ section{
 // home some
 .follow{
     @include m.section-pink;
+    padding: 60px 20px;
 
-    .divider {
-        @include m.divider
+    &__header{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 24px;
     }
 
-    padding: 60px 20px;
 
     &__title{
         margin-bottom: 30px;
         position: relative;
-    }
-
-    &::before,&::after{
-        content: "";
-        display: block;
-        height: 1;
-        background-color: black;
-        width: 100%;
-        margin: 10px 0;
     }
 
     &__content{
@@ -190,27 +184,32 @@ section{
 
     &__visual{
         position: relative;
-        width: 260px;
-        height: 260px;
+        flex-shrink: 0;
+        width: 160px;
     }
 
     &__icon{
         position: absolute;
-        width: 220px;
-        height: 220px;
         top: 0;
         left: 0;
+        width: 100%;
+        z-index: 2;
     }
 
     &__image{
-        position: absolute;
-        width: 200px;
+        display: block;
+        width: 100%;
         height: auto;
+        position: relative;
+        z-index: 1;
     }
 
     &__text{
-        max-width: 300px;
-        text-align: left;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
     }
 
     &__description{
@@ -221,6 +220,11 @@ section{
         @include m.button; 
     }
 
+}
+
+.divider {
+    @include m.divider;
+    
 }
 
 
