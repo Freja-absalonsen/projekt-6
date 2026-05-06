@@ -3,6 +3,6 @@
 
 <template>
     <section>
-        <h2>HEJ</h2>
+        <h2>HEJ MED DIG</h2>
     </section>
 </template>
