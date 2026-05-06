@@ -32,6 +32,9 @@ p,a{
 section{
     padding: 20px;
     background-color: c.$color-primary;
+    @media (min-width: 768px){
+        padding: 20px 25%;
+    }
 }
 
 //Header

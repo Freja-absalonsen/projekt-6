@@ -30,6 +30,11 @@ section {
   padding: 20px;
   background-color: #FFFED9;
 }
+@media (min-width: 768px) {
+  section {
+    padding: 20px 25%;
+  }
+}
 
 .header {
   background-color: #362110;
@@ -102,6 +107,23 @@ section {
   font-family: "Poppins", sans-serif;
 }
 
+.home-info {
+  display: flex;
+  flex-direction: column;
+}
+.home-info__image {
+  height: 220px;
+}
+.home-info__content {
+  padding: 24px;
+}
+.home-info__title {
+  margin-bottom: 13px;
+}
+.home-info__text {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
 .home-info__button {
   background: #577448;
   color: #FFFED9;
@@ -112,6 +134,34 @@ section {
   align-self: center;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
+}
+
+.follow {
+  background-color: #FFCDC4;
+  padding: 60px 20px;
+}
+.follow__content {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 40px;
+}
+.follow__visual {
+  position: relative;
+  width: 260px;
+  height: 260px;
+}
+.follow__icon {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  top: 0;
+  left: 0;
+}
+.follow__image {
+  position: absolute;
+  width: 200px;
+  height: auto;
 }
 
 .testimonials {
@@ -334,12 +384,6 @@ section {
   height: 200px;
   width: 100%;
   border-radius: 4px;
-  /*
-    @media (min-width: 768px) {
-      width: 400px;
-      height: 250px;
-    }
-  */
 }
 .map-section .square-top-right {
   position: absolute;
@@ -359,8 +403,26 @@ section {
   left: -7px;
   z-index: 1;
 }
-.map-section__address {
-  margin-top: 12px;
+.map-section__icon {
+  width: 15px;
+  height: 15px;
+  margin-top: 16px;
+}
+.map-section__address-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: 0.2s ease;
+}
+.map-section__address:hover {
+  text-decoration: underline;
+}
+.map-section__icon {
+  width: 20px;
+  height: 20px;
 }
 
 .about__wrapper {
@@ -404,6 +466,11 @@ section {
 .our-history {
   background-color: #FFCDC4;
   padding: 20px 16px;
+}
+@media (min-width: 768px) {
+  .our-history {
+    padding: 20px 25%;
+  }
 }
 .our-history .divider {
   height: 1px;
@@ -482,7 +549,7 @@ section {
   margin-top: 10px;
 }
 .footer__image {
-  width: 180px;
+  width: 100px;
   display: block;
 }
 .footer__heading {
