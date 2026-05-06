@@ -146,6 +146,38 @@ section{
         @include m.button; 
     }
 
+}
+
+.follow{
+    background-color: c.$color-secondary;
+    padding: 60px 20px;
+
+    &__content{
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        gap: 40px;
+    }
+
+    &__visual{
+        position: relative;
+        width: 260px;
+        height: 260px;
+    }
+
+    &__icon{
+        position: absolute;
+        width: 220px;
+        height: 220px;
+        top: 0;
+        left: 0;
+    }
+
+    &__image{
+        position: absolute;
+        width: 200px;
+        height: auto;
+    }
 
 }
 
