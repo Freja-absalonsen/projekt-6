@@ -21,7 +21,6 @@ h2{
 h3{
     font-size: f.$font-size-h3;
     font-family: f.$font-secondary;
-    text-align: center;
 }
 
 p,a{
@@ -44,6 +43,12 @@ section{
   position: sticky;
   top: 0;
   z-index: 9999;
+
+  &__logo{
+    height: 64px;
+    position: fixed;
+    left: 20px;
+  }
 
   &__button {
     position: fixed;
@@ -138,10 +143,6 @@ section{
         height: 100%;
     }
 
-    &__content{
-        padding: 20px 20px;
-    }
-
     &__title{
         margin-bottom: 13px;
     }
@@ -188,20 +189,26 @@ section{
         @include m.button; 
     }
 
-    &__image-wrap{
+
+    &__wrapper{
         position: relative;
-        width: 145px;
-        flex-shrink: 0;
+
+        img {
+            display: block;
+            position: relative;
+            z-index: 2;
+            width: 100%;
+        }
+    }
+  
+
+    .square-top-right{
+        @include m.square-top-right;
     }
 
-    &__image{
-        display: block;
-        width: 100%;
-        height: auto;
-        position: relative;
-        z-index: 1;
+    .square-bottom-left{
+        @include m.square-bottom-left
     }
-
 }
 
 // home some
@@ -211,15 +218,12 @@ section{
     overflow: hidden;
 
     &__header{
-        display: flex;
         align-items: center;
-        gap: 10px;
         margin-bottom: 24px;
     }
 
 
     &__title{
-        margin-bottom: 30px;
         white-space: nowrap;
         position: relative;
     }

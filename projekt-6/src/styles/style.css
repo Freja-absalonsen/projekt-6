@@ -18,7 +18,6 @@ h2 {
 h3 {
   font-size: 20px;
   font-family: "Indie Flower", cursive;
-  text-align: center;
 }
 
 p, a {
@@ -42,6 +41,11 @@ section {
   position: sticky;
   top: 0;
   z-index: 9999;
+}
+.header__logo {
+  height: 64px;
+  position: fixed;
+  left: 20px;
 }
 .header__button {
   position: fixed;
@@ -119,9 +123,6 @@ section {
   width: 100%;
   height: 100%;
 }
-.home-info__content {
-  padding: 20px 20px;
-}
 .home-info__title {
   margin-bottom: 13px;
 }
@@ -133,7 +134,7 @@ section {
   background: #577448;
   color: #FFFED9;
   border: none;
-  padding: 12px 25px;
+  padding: 5px 20px;
   border-radius: 6px;
   cursor: pointer;
   align-self: center;
@@ -167,23 +168,38 @@ section {
   background: #577448;
   color: #FFFED9;
   border: none;
-  padding: 12px 25px;
+  padding: 5px 20px;
   border-radius: 6px;
   cursor: pointer;
   align-self: center;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
 }
-.home-history__image-wrap {
+.home-history__wrapper {
   position: relative;
-  width: 145px;
-  flex-shrink: 0;
 }
-.home-history__image {
+.home-history__wrapper img {
   display: block;
-  width: 100%;
-  height: auto;
   position: relative;
+  z-index: 2;
+  width: 100%;
+}
+.home-history .square-top-right {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  background-color: #F87325;
+  top: -7px;
+  right: -7px;
+  z-index: 1;
+}
+.home-history .square-bottom-left {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  background-color: #F87325;
+  bottom: -7px;
+  left: -7px;
   z-index: 1;
 }
 
@@ -201,13 +217,10 @@ section {
   overflow: hidden;
 }
 .follow__header {
-  display: flex;
   align-items: center;
-  gap: 10px;
   margin-bottom: 24px;
 }
 .follow__title {
-  margin-bottom: 30px;
   white-space: nowrap;
   position: relative;
 }
@@ -256,7 +269,7 @@ section {
   background: #577448;
   color: #FFFED9;
   border: none;
-  padding: 12px 25px;
+  padding: 5px 20px;
   border-radius: 6px;
   cursor: pointer;
   align-self: center;
@@ -437,7 +450,7 @@ section {
   background: #577448;
   color: #FFFED9;
   border: none;
-  padding: 12px 25px;
+  padding: 5px 20px;
   border-radius: 6px;
   cursor: pointer;
   align-self: center;

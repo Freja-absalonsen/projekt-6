@@ -2,7 +2,7 @@
     <section class="follow">
         <div class="follow__header">
             <div class="divider"></div>
-                <h3 class="follow__title">Følg med</h3>
+            <h2 class="follow__title">Følg med</h2>
             <div class="divider"></div>
         </div>
         
@@ -15,7 +15,6 @@
             <div class="follow__text">
                 <p class="follow__description">Se med på vores instagram, for at se de nyeste vare i butikken </p>
                 <button class="follow__button">Følg os →</button>
-
             </div>
 
         </div>

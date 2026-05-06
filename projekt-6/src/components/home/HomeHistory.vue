@@ -11,9 +11,10 @@
                 <button class="home-history__button">Læs mere →</button>
             </div>
 
-            <div class="home-history__image-wrap">
-                <img class="home-history__image" src="@/assets/home-jesper.jpg" alt="Jesper i forklæde">
-                <div class="home-history__image-accent"></div>
+            <div class="home-history__wrapper">
+              <div class="square-top-right"></div>
+              <img src="@/assets/home-jesper.jpg" alt="Jesper i forklæde">
+              <div class="square-bottom-left"></div>
             </div>
         </div>
 
