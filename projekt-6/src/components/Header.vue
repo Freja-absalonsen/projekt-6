@@ -10,6 +10,11 @@
 
 <template>
     <header class="header">
+        <div class="header__logo">
+            <RouterLink :to="{ name: 'home' }">
+              <img src="@/assets/logo-naer.png" alt="Logo.">
+            </RouterLink>
+        </div>
         <button
           class="header__button"
           :aria-expanded="open.toString()"
