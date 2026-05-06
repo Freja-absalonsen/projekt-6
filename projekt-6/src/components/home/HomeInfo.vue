@@ -1,9 +1,13 @@
 <template>
     <section class="home-info">
         <div class="home-info__hero">
-            <video class="home-info__video" autoplay muted loop playsinline>
-                <source src="" type="video/mp4">
-            </video>
+            <iframe
+                class="home-info__video"
+                src="https://www.youtube.com/embed/gOneACBnfNY?autoplay=1&mute=1&loop=1&playlist=gOneACBnfNY&controls=0&playsinline=1"
+                frameborder="0"
+                allow="autoplay; encrypted-media"
+                allowfullscreen
+            ></iframe>
         </div>
 
         <div class="home-info__content">
