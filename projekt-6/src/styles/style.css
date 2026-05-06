@@ -120,7 +120,7 @@ section {
   height: 100%;
 }
 .home-info__content {
-  padding: 24px;
+  padding: 20px 20px;
 }
 .home-info__title {
   margin-bottom: 13px;
@@ -141,6 +141,52 @@ section {
   font-family: "Poppins", sans-serif;
 }
 
+.home-history {
+  padding: 20px 20px;
+}
+.home-history__title {
+  margin-bottom: 24px;
+}
+.home-history__content {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.home-history__text-block {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+.home-history__text {
+  line-height: 1.6;
+}
+.home-history__button {
+  background: #577448;
+  color: #FFFED9;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  align-self: center;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+.home-history__image-wrap {
+  position: relative;
+  width: 145px;
+  flex-shrink: 0;
+}
+.home-history__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+
 .follow {
   background-color: #FFCDC4;
   padding: 20px 16px;
@@ -152,6 +198,7 @@ section {
 }
 .follow {
   padding: 60px 20px;
+  overflow: hidden;
 }
 .follow__header {
   display: flex;
@@ -161,6 +208,7 @@ section {
 }
 .follow__title {
   margin-bottom: 30px;
+  white-space: nowrap;
   position: relative;
 }
 .follow__content {
@@ -172,21 +220,26 @@ section {
 .follow__visual {
   position: relative;
   flex-shrink: 0;
-  width: 160px;
+  width: 180px;
+  height: 300px;
 }
 .follow__icon {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 2;
+  top: -30px;
+  left: -250px;
+  width: 340px;
+  height: 314px;
+  z-index: 1;
 }
 .follow__image {
   display: block;
-  width: 100%;
-  height: auto;
-  position: relative;
-  z-index: 1;
+  width: 188px;
+  height: 288px;
+  position: absolute;
+  top: 40px;
+  left: 5px;
+  z-index: 2;
+  border-radius: 5px;
 }
 .follow__text {
   flex: 1;
@@ -197,6 +250,7 @@ section {
 }
 .follow__description {
   margin-bottom: 20px;
+  text-align: center;
 }
 .follow__button {
   background: #577448;

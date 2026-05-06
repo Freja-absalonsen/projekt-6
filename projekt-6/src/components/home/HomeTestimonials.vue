@@ -1,5 +1,5 @@
 <script setup>
-import {ref, computed, onMounted, onUnmounted} from 'vue'
+import {ref, onMounted, onUnmounted} from 'vue'
 
 const currentIndex = ref(0)
 

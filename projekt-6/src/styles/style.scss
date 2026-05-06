@@ -139,7 +139,7 @@ section{
     }
 
     &__content{
-        padding: 24px;
+        padding: 20px 20px;
     }
 
     &__title{
@@ -157,10 +157,58 @@ section{
 
 }
 
+// home history
+.home-history{
+    padding: 20px 20px;
+
+    &__title{
+        margin-bottom: 24px;
+    }
+
+    &__content{
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+        margin-bottom: 20px;
+    }
+
+    &__text-block{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    &__text{
+        line-height: 1.6;
+    }
+
+    &__button{
+        @include m.button; 
+    }
+
+    &__image-wrap{
+        position: relative;
+        width: 145px;
+        flex-shrink: 0;
+    }
+
+    &__image{
+        display: block;
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 1;
+    }
+
+}
+
 // home some
 .follow{
     @include m.section-pink;
     padding: 60px 20px;
+    overflow: hidden;
 
     &__header{
         display: flex;
@@ -172,6 +220,7 @@ section{
 
     &__title{
         margin-bottom: 30px;
+        white-space: nowrap;
         position: relative;
     }
 
@@ -185,23 +234,28 @@ section{
     &__visual{
         position: relative;
         flex-shrink: 0;
-        width: 160px;
+        width: 180px;
+        height: 300px;
     }
 
     &__icon{
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 2;
+        top: -30px;
+        left: -250px;
+        width: 340px;
+        height: 314px;
+        z-index: 1;
     }
 
     &__image{
         display: block;
-        width: 100%;
-        height: auto;
-        position: relative;
-        z-index: 1;
+        width: 188px;
+        height: 288px;
+        position: absolute;
+        top: 40px;
+        left: 5px;
+        z-index: 2;
+        border-radius: 5px;
     }
 
     &__text{
@@ -214,6 +268,7 @@ section{
 
     &__description{
         margin-bottom: 20px;
+        text-align: center
     }
 
     &__button{

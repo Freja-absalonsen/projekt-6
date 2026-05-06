@@ -2,7 +2,7 @@
     <section class="follow">
         <div class="follow__header">
             <div class="divider"></div>
-                <h3 class="follow__container">Følg med</h3>
+                <h3 class="follow__title">Følg med</h3>
             <div class="divider"></div>
         </div>
         
@@ -19,10 +19,6 @@
             </div>
 
         </div>
-
-       
-
-        
 
     </section>
 </template>
