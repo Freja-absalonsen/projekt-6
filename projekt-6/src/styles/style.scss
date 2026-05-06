@@ -134,13 +134,20 @@ section{
     flex-direction: column;
 
     &__hero{
-        height: 220px;
+        height: 250px;
         overflow: hidden;
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0;
+        margin: 0;
     }
 
     &__video{
         width: 100%;
         height: 100%;
+        display: block;
     }
 
     &__title{
@@ -214,14 +221,15 @@ section{
 // home some
 .follow{
     @include m.section-pink;
-    padding: 60px 20px;
+    padding: 20px;
+    padding-bottom: 60px;
+    
     overflow: hidden;
 
     &__header{
         align-items: center;
         margin-bottom: 24px;
     }
-
 
     &__title{
         white-space: nowrap;
@@ -244,7 +252,7 @@ section{
 
     &__icon{
         position: absolute;
-        top: -30px;
+        top: -20px;
         left: -250px;
         width: 340px;
         height: 314px;
@@ -256,7 +264,7 @@ section{
         width: 188px;
         height: 288px;
         position: absolute;
-        top: 40px;
+        top: 50px;
         left: 5px;
         z-index: 2;
         border-radius: 5px;
