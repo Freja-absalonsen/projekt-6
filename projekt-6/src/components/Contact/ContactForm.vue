@@ -45,6 +45,13 @@ async function handleSubmit() {
     message: form.value.message
   })
 
+  form.value = {
+    name: '',
+    email: '',
+    phone: '',
+    message: ''
+  }
+
   console.log(form.value)
   alert('Besked sendt!')
 }
