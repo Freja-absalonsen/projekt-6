@@ -1,5 +1,7 @@
 <script setup>
 import { ref } from 'vue'
+import { collection, addDoc } from "firebase/firestore";
+import { firestore } from "../../firebase";
 
 const form = ref({
   name: '',
@@ -14,7 +16,7 @@ const phoneError = ref('')
 // https://www.geeksforgeeks.org/javascript/how-to-validate-phone-numbers-using-javascript/ 
 // https://www.geeksforgeeks.org/javascript/how-to-validate-email-address-using-regexp-in-javascript/
 
-function handleSubmit() {
+async function handleSubmit() {
   
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
   const phoneRegex = /^(\+45)?\s?\d{2}\s?\d{2}\s?\d{2}\s?\d{2}$/
@@ -36,9 +38,20 @@ function handleSubmit() {
 
   if (hasError) return
 
+  await addDoc(collection(firestore, "messages"), {
+    name: form.value.name,
+    email: form.value.email,
+    phone: form.value.phone,
+    message: form.value.message
+  })
+
   console.log(form.value)
   alert('Besked sendt!')
 }
+
+
+
+
 </script>
 
 <template>

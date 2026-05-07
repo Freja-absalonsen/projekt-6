@@ -114,6 +114,7 @@ section {
 .home-info {
   display: flex;
   flex-direction: column;
+  padding-top: 0%;
 }
 .home-info__hero {
   height: 250px;
@@ -149,9 +150,6 @@ section {
   font-family: "Poppins", sans-serif;
 }
 
-.home-history {
-  padding: 20px 20px;
-}
 .home-history__title {
   margin-bottom: 24px;
 }
@@ -220,7 +218,6 @@ section {
   }
 }
 .follow {
-  padding: 20px;
   padding-bottom: 60px;
   overflow: hidden;
 }
@@ -292,7 +289,6 @@ section {
 }
 
 .testimonials {
-  padding: 24px;
   background: #FFFED9;
   text-align: center;
 }
@@ -352,12 +348,6 @@ section {
   background: #F87325;
 }
 
-.contact {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  text-align: center;
-}
 .contact__title {
   margin-bottom: 10px;
 }
@@ -401,9 +391,6 @@ section {
   text-decoration: none;
 }
 
-.form-section {
-  padding: 20px;
-}
 .form-section__form {
   display: flex;
   flex-direction: column;
@@ -468,19 +455,26 @@ section {
 
 .hours-section {
   background-color: #FFCDC4;
-  width: 100%;
   padding: 20px 16px;
-  display: flex;
+}
+@media (min-width: 768px) {
+  .hours-section {
+    padding: 20px 25%;
+  }
+}
+.hours-section {
   justify-content: center;
-  box-sizing: border-box;
+  display: flex;
+}
+.hours-section .divider {
+  height: 1px;
+  background-color: #362120;
+  width: 100%;
 }
 .hours-section__container {
   width: 100%;
   max-width: 500px;
   text-align: center;
-}
-.hours-section__title {
-  margin: 10px 0;
 }
 .hours-section__divider {
   height: 1px;
@@ -495,7 +489,6 @@ section {
 
 .map-section {
   text-align: center;
-  padding: 20px;
 }
 .map-section__title {
   margin-bottom: 16px;
@@ -532,7 +525,6 @@ section {
 .map-section__icon {
   width: 15px;
   height: 15px;
-  margin-top: 16px;
 }
 .map-section__address-link {
   display: flex;

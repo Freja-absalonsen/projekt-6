@@ -132,6 +132,7 @@ section{
 .home-info{
     display: flex;
     flex-direction: column;
+    padding-top: 0%;
 
     &__hero{
         height: 250px;
@@ -167,7 +168,6 @@ section{
 
 // home history
 .home-history{
-    padding: 20px 20px;
 
     &__title{
         margin-bottom: 24px;
@@ -221,7 +221,7 @@ section{
 // home some
 .follow{
     @include m.section-pink;
-    padding: 20px;
+
     padding-bottom: 60px;
     
     overflow: hidden;
@@ -297,7 +297,6 @@ section{
 
 // Home anmeldelser
 .testimonials{
-    padding: 24px;
     background: c.$color-text-secondary;
     text-align: center;
 
@@ -371,10 +370,7 @@ section{
 
 // Contact info
 .contact{
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    text-align: center;
+
 
     &__title{
         margin-bottom: 10px;
@@ -430,7 +426,6 @@ section{
 // Contact form
 
 .form-section{
-    padding: 20px;
 
     &__form{
         display: flex;
@@ -498,12 +493,12 @@ section{
 // Contact time
 
 .hours-section{
-    background-color: c.$color-secondary;
-    width: 100%;
-    padding: 20px 16px;
-    display: flex;
+    @include m.section-pink;
     justify-content: center;
-    box-sizing: border-box;
+    display: flex;
+    .divider {
+        @include m.divider
+    }    
 
     &__container{
         width: 100%;
@@ -511,9 +506,6 @@ section{
         text-align: center;
     }
 
-    &__title{
-        margin: 10px 0;
-    }
 
     &__divider{
         height: 1px;
@@ -532,7 +524,6 @@ section{
 // Contact map
 .map-section {
     text-align: center;
-    padding: 20px;
 
     &__title{
         margin-bottom: 16px;
@@ -562,7 +553,6 @@ section{
     &__icon{
         width: 15px;
         height: 15px;
-        margin-top: 16px;
     }
 
     &__address-link {
