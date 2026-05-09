@@ -313,18 +313,26 @@ section{
     &__track{
         display: flex;
         transition: transform 0.4s ease;
+        align-items: stretch;
     }
 
     &__slide{
         min-width: 50%;
-        flex-shrink: 0;
+        flex: 0 0 50%;
         padding: 0 8px;
+        box-sizing: border-box;
+        display: flex;
     }
 
     &__card{
         background: c.$color-text-secondary ;
         border: 2px solid c.$color-text-tertiary;
-        padding: 24px;
+        padding: 20px;
+        min-height: 220px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     &__stars{
@@ -337,6 +345,10 @@ section{
         font-size: f.$font-size-quinary;
         color: c.$color-text-tertiary;
         margin-bottom: 16px;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     &__author{

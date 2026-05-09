@@ -1,3 +1,5 @@
+<!-- har fundet inspiration på disse to hjemmesider https://coreui.io/answers/how-to-build-a-slider-in-vue/ og https://cruip.com/how-to-build-a-fancy-testimonial-slider-with-tailwind-css-and-vue/ -->
+
 <script setup>
 import {ref, onMounted, onUnmounted} from 'vue'
 
@@ -52,7 +54,7 @@ onUnmounted(() => {
                     <div class="testimonials__card">
                         <div class="testimonials__stars">★★★★★</div>
                         <p class="testimonials__text">"{{ testimonial.text }}"</p>
-                        <p class="testimonials__author">"@{{ testimonial.author }}"</p>
+                        <p class="testimonials__author">@{{ testimonial.author }}</p>
                     </div>
 
                 </div>

@@ -303,16 +303,24 @@ section {
 .testimonials__track {
   display: flex;
   transition: transform 0.4s ease;
+  align-items: stretch;
 }
 .testimonials__slide {
   min-width: 50%;
-  flex-shrink: 0;
+  flex: 0 0 50%;
   padding: 0 8px;
+  box-sizing: border-box;
+  display: flex;
 }
 .testimonials__card {
   background: #FFFED9;
   border: 2px solid #577448;
-  padding: 24px;
+  padding: 20px;
+  min-height: 220px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .testimonials__stars {
   color: #577448;
@@ -323,6 +331,10 @@ section {
   font-size: 14px;
   color: #577448;
   margin-bottom: 16px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .testimonials__author {
   font-family: "Poppins", sans-serif;
