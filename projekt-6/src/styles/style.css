@@ -324,11 +324,10 @@ section {
   background: #FFFED9;
   border: 2px solid #577448;
   padding: 20px;
-  min-height: 220px;
+  height: 100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 .testimonials__stars {
   color: #577448;
