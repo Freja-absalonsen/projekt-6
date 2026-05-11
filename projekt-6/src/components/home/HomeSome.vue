@@ -14,7 +14,11 @@
 
             <div class="follow__text">
                 <p class="follow__description">Se med på vores instagram, for at se de nyeste vare i butikken </p>
-                <button class="follow__button">Følg os →</button>
+                <button class="follow__button">
+                    <a href="https://www.instagram.com/mikrobageri_1?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="insta-icon">
+                        Følg os →
+                    </a>
+                </button>
             </div>
 
         </div>

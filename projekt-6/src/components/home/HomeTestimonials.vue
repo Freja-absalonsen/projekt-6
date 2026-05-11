@@ -47,18 +47,21 @@ onUnmounted(() => {
 <template>
     <section class="testimonials">
         <h2 class="testimonials__title">Vores kunder siger</h2>
+        <div class="testimonials__wrapper">
+            <div class="square-top-right"></div>
+            <div class="testimonials__slider">
+                <div class="testimonials__track" :style="{transform: `translateX(-${currentIndex * 50}%)`}">
+                    <div v-for="(testimonial,index) in testimonials" :key="index" class="testimonials__slide">
+                        <div class="testimonials__card">
+                            <div class="testimonials__stars">★★★★★</div>
+                            <p class="testimonials__text">"{{ testimonial.text }}"</p>
+                            <p class="testimonials__author">@{{ testimonial.author }}</p>
+                        </div>
 
-        <div class="testimonials__slider">
-            <div class="testimonials__track" :style="{transform: `translateX(-${currentIndex * 50}%)`}">
-                <div v-for="(testimonial,index) in testimonials" :key="index" class="testimonials__slide">
-                    <div class="testimonials__card">
-                        <div class="testimonials__stars">★★★★★</div>
-                        <p class="testimonials__text">"{{ testimonial.text }}"</p>
-                        <p class="testimonials__author">@{{ testimonial.author }}</p>
                     </div>
-
                 </div>
             </div>
+            <div class="square-bottom-left"></div>
         </div>
 
         <div class="testimonials__dots">

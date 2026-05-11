@@ -28,7 +28,11 @@
             <p class="home-info__text">Et mikrobageri i hjertet af Odense. Her finder du friskbagt brød og kager lavet med omhu og passion. - Et sted du kan kigge forbi på farten, slå et lille smut ind, eller bare være et øjeblik
             </p>
 
-            <button class="home-info__button">Find vej →</button>
+            
+
+            <RouterLink :to="{ name: 'kontakt' }">
+              <button class="home-info__button">Find vej →</button>
+            </RouterLink>
         </div>
     </section>
 </template>

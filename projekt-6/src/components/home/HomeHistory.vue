@@ -8,7 +8,9 @@
                     Vores rejse begyndte med kærlighed for surdej, godt håndværk og ærlige ingredienser. I dag bager vi hver morgen i Overgade – med respekt for traditioner og lysten til at skabe noget, der smager af mere.
                 </p>
 
-                <button class="home-history__button">Læs mere →</button>
+                <RouterLink :to="{ name: 'about' }">
+                    <button class="home-history__button">Læs mere →</button>
+                </RouterLink>
             </div>
 
             <div class="home-history__wrapper">
