@@ -12,7 +12,7 @@
     <header class="header">
         <div class="header__logo">
             <RouterLink :to="{ name: 'home' }">
-              <img class="header__logo" src="@/assets/logo-naer.png" alt="Logo.">
+              <img src="@/assets/logo-naer.png" alt="Logo.">
             </RouterLink>
         </div>
         <button

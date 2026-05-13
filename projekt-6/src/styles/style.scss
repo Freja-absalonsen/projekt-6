@@ -10,23 +10,30 @@ h1{
     font-size: f.$font-size-primary;
     font-family: f.$font-secondary;
     text-align: center;
+    margin: 15px;
 }
 
 h2{
     font-size: f.$font-size-secondary;
     font-family: f.$font-secondary;
     text-align: center;
+    margin: 10px;
 }
 
 h3{
     font-size: f.$font-size-h3;
     font-family: f.$font-secondary;
+    margin: 5px;
 }
 
 p,a{
     font-size: f.$font-size-tertiary;
     font-family: f.$font-primary;
     text-decoration: none;
+}
+
+p{
+    margin-bottom: 24px;
 }
 
 section{
@@ -46,13 +53,23 @@ section{
   z-index: 9999;
 
   &__logo{
-    height: 64px;
-    position: fixed;
+    position: absolute;
+    top: 0;
     left: 20px;
+    height: 64px;
+
+    display: flex;
+    align-items: center;
+    z-index: 10000;
+  }
+
+  &__logo img{
+    height: 64px;
+    display: block;
   }
 
   &__button {
-    position: fixed;
+    position: absolute;
     top: 20px;
     right: 20px;
     z-index: 9999;
@@ -75,7 +92,11 @@ section{
   }
 
   &__burger-line.open:nth-child(1) {
-    transform: translateY(9.5px) rotate(45deg);
+    transform: translateY(10.5px) rotate(45deg);
+
+    @media(min-width: 768px){
+        transform: translateY(9.5px) rotate(45deg);
+    }
   }
 
   &__burger-line.open:nth-child(2) {
@@ -83,7 +104,11 @@ section{
   }
 
   &__burger-line.open:nth-child(3) {
-    transform: translateY(-9.5px) rotate(-45deg);
+    transform: translateY(-10.5px) rotate(-45deg);
+
+    @media(min-width: 768px){
+        transform: translateY(-9.5px) rotate(-45deg);
+    }
   }
 
   &__overlay {
@@ -151,14 +176,6 @@ section{
         pointer-events: none;
     }
 
-    &__title{
-        margin-bottom: 13px;
-    }
-
-    &__text{
-        line-height: 1.5;
-    }
-
     &__button{
         @include m.button; 
     }
@@ -168,15 +185,10 @@ section{
 // home history
 .home-history{
 
-    &__title{
-        margin-bottom: 24px;
-    }
-
     &__content{
         display: flex;
         align-items: flex-start;
         gap: 16px;
-        margin-bottom: 20px;
     }
 
     &__text-block{
@@ -239,7 +251,7 @@ section{
         display: flex;
         align-items: center;
         justify-items: center;
-        gap: 40px;
+
     }
 
     &__visual{
@@ -260,13 +272,18 @@ section{
 
     &__image{
         display: block;
-        width: 188px;
-        height: 288px;
+        width: 90%;
+        height: auto;
         position: absolute;
         top: 50px;
         left: 5px;
         z-index: 2;
         border-radius: 5px;
+        
+        @media(min-width: 768px){
+            width: 100%;
+        }
+
     }
 
     &__text{
@@ -277,7 +294,7 @@ section{
     }
 
     &__description{
-        text-align: center
+        text-align: center;
     }
 
     &__button{
@@ -302,7 +319,6 @@ section{
     text-align: center;
 
     &__title{
-        margin-bottom: 24px;
         font-size: f.$font-size-primary;
         font-family: f.$font-secondary;
     }
@@ -398,11 +414,6 @@ section{
 // Contact info
 .contact{
 
-
-    &__title{
-        margin-bottom: 10px;
-    }
-
     &__description{
         font-size: f.$font-size-tertiary;
         font-family: f.$font-primary;
@@ -458,6 +469,7 @@ section{
         display: flex;
         flex-direction: column;
         gap: 12px;
+        margin-bottom: 24px;
     }
 
     &__input, &__textarea{
@@ -514,6 +526,8 @@ section{
 
     &__button{
         @include m.button; 
+        display: flex;
+        justify-self: center
     }
 }
 
@@ -529,7 +543,6 @@ section{
 
     &__container{
         width: 100%;
-        max-width: 500px;
         text-align: center;
     }
 
@@ -552,12 +565,9 @@ section{
 .map-section {
     text-align: center;
 
-    &__title{
-        margin-bottom: 16px;
-    }
-
     &__wrapper{
         position: relative;
+        margin-bottom: 24px;
     }
   
     &__map {
@@ -652,8 +662,8 @@ section{
             "text2     text2"
             "text3     text3";
         grid-template-columns: 1fr 45%;
-        padding-top: 20px;
         column-gap: 1rem;
+        margin-top: 24px;
         
         @media (min-width: 768px) {
             grid-template-areas:
@@ -671,6 +681,7 @@ section{
     &__wrapper {
         grid-area: image;
         align-self: start;
+        margin-bottom: 24px;
     }
 
     .image-wrapper {
@@ -699,8 +710,7 @@ section{
 .footer{
     background-color: c.$color-tertiary;
     color: c.$color-text-secondary;
-    padding: 40px 20px;
-
+    padding: 20px;
     &__inner {
         max-width: 1100px;
         margin: 0 auto;
@@ -708,7 +718,6 @@ section{
 
     &__title {
         text-align: center;
-        margin-bottom: 40px;
     }
 
     &__grid {
@@ -738,15 +747,6 @@ section{
     &__image{
         width: 100px;
         display: block;
-    }
-
-    &__heading{
-        margin-bottom: 5px;
-        letter-spacing: 0.5px;
-    }
-
-    &__text{
-        margin: 4px 0;
     }
 
     &__link{

@@ -85,7 +85,7 @@ async function handleSubmit() {
       <label class="form-section__label" >Meddelelse</label>
       <textarea class="form-section__textarea" v-model="form.message" placeholder="Meddelelse"></textarea>
 
-      <button class="form-section__button" type="submit">Send →</button>
     </form>
+    <button class="form-section__button" type="submit">Send →</button>
   </section>
 </template>

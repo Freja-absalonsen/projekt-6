@@ -4,7 +4,7 @@
 //pink sektion
 @mixin section-pink {
     background-color: c.$color-secondary;
-    padding: 20px 16px;
+    padding: 20px;
       @media (min-width: 768px){
         padding: 20px 25%;
       }
@@ -22,7 +22,7 @@
     background: c.$color-quinary;
     color: c.$color-text-secondary;
     border: none;
-    padding: 5px 20px;
+    padding: 5px 8px;
     border-radius: 6px;
     cursor: pointer;
     align-self: center;

@@ -7,7 +7,7 @@
             <div class="footer__grid">
                 <div class="footer__column footer__column--left">
                     <div class="footer__section">
-                        <h3 class="footer__heading">Kontaktoplysninger</h3>
+                        <h3 class="footer__heading">Kontakt</h3>
                         <p class="footer__text"><a href="tel:+4525602134" class="footer__link">+45 25 60 21 34</a></p>
                         <p class="footer__text"><a href="mailto:nær@gmail.com" class="footer__link">nær@gmail.com</a></p>
                     </div>
