@@ -181,7 +181,7 @@ section {
   gap: 16px;
 }
 .home-history__text {
-  line-height: 1.6;
+  width: 80%;
 }
 .home-history__button {
   background: #577448;
