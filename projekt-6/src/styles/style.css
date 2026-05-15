@@ -60,7 +60,7 @@ section {
   z-index: 10000;
 }
 .header__logo img {
-  height: 64px;
+  height: 30px;
   display: block;
 }
 .header__button {
@@ -196,6 +196,7 @@ section {
 }
 .home-history__wrapper {
   position: relative;
+  width: 65%;
 }
 .home-history__wrapper img {
   display: block;
@@ -247,6 +248,11 @@ section {
   display: flex;
   align-items: center;
   justify-items: center;
+}
+@media (min-width: 768px) {
+  .follow__content {
+    gap: 5%;
+  }
 }
 .follow__visual {
   position: relative;

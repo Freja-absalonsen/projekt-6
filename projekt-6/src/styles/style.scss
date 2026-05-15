@@ -64,7 +64,7 @@ section{
   }
 
   &__logo img{
-    height: 64px;
+    height: 30px;
     display: block;
   }
 
@@ -210,6 +210,7 @@ section{
 
     &__wrapper{
         position: relative;
+        width: 65%;
 
         img {
             display: block;
@@ -252,6 +253,9 @@ section{
         align-items: center;
         justify-items: center;
 
+        @media(min-width: 768px){
+            gap: 5%;
+        }
     }
 
     &__visual{

@@ -1,9 +1,29 @@
 <!-- har fundet inspiration på disse to hjemmesider https://coreui.io/answers/how-to-build-a-slider-in-vue/ og https://cruip.com/how-to-build-a-fancy-testimonial-slider-with-tailwind-css-and-vue/ -->
+<!-- inspiration til touch event: https://coreui.io/answers/how-to-handle-touch-events-in-vue/-->
 
 <script setup>
 import {ref, onMounted, onUnmounted} from 'vue'
 
 const currentIndex = ref(0)
+
+const touchStartX = ref(0)
+
+const startSwipe = (event) => {
+    touchStartX.value = event.changedTouches[0].screenX
+}
+
+const endSwipe = (event) => {
+    const swipeDistance =
+        touchStartX.value - event.changedTouches[0].screenX
+
+    if (swipeDistance > 50) {
+        nextSlide()
+    }
+
+    if (swipeDistance < -50) {
+        prevSlide()
+    }
+}
 
 const testimonials = [
     { text: 'Kvaliteten kan i den grad smages', author:'Maiken'},
@@ -28,6 +48,14 @@ const nextSlide = () => {
     }
 }
 
+const prevSlide = () => {
+    if (currentIndex.value <= 0){
+        currentIndex.value = maxIndex
+    } else {
+        currentIndex.value--
+    }
+}
+
 const goToSlide = (index) => {
     currentIndex.value = index
 }
@@ -42,6 +70,7 @@ onUnmounted(() => {
     clearInterval(interval)
 })
 
+
 </script>
 
 <template>
@@ -49,7 +78,7 @@ onUnmounted(() => {
         <h2 class="testimonials__title">Vores kunder siger</h2>
         <div class="testimonials__wrapper">
             <div class="square-top-right"></div>
-            <div class="testimonials__slider">
+            <div class="testimonials__slider" @touchstart="startSwipe" @touchend="endSwipe">
                 <div class="testimonials__track" :style="{transform: `translateX(-${currentIndex * 50}%)`}">
                     <div v-for="(testimonial,index) in testimonials" :key="index" class="testimonials__slide">
                         <div class="testimonials__card">
