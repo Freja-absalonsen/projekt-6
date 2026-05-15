@@ -13,7 +13,7 @@
                 <div class="our-history__wrapper">
                     <div class="image-wrapper">
                         <div class="square-top-right"></div>
-                        <img src="@/assets/about-trine.jpg" alt="Billede af en smilende, lyshåret kvinde på en cykel.">
+                        <img src="@/assets/about-trine.webp" alt="Billede af en smilende, lyshåret kvinde på en cykel.">
                         <div class="square-bottom-left"></div>
                     </div>
                 </div>

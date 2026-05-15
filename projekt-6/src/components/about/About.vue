@@ -17,8 +17,8 @@
                     <div class="image-wrapper">
                         <div class="square-top-right"></div>
                             <div class="about__images">
-                                <img src="@/assets/about-gang.jpg" alt="Billede af en smilende, lyshåret kvinde på en cykel.">
-                                <img src="@/assets/about-kanelsnegl.jpg" alt="Billede af en smilende, lyshåret kvinde på en cykel.">
+                                <img src="@/assets/about-gang.webp" alt="Billede af en smilende, lyshåret kvinde på en cykel.">
+                                <img src="@/assets/about-kanelsnegl.webp" alt="Billede af en smilende, lyshåret kvinde på en cykel.">
                             </div>
                         <div class="square-bottom-left"></div>
                     </div>

@@ -28,7 +28,7 @@
 
                     <div class="footer-section footer-section--report">
                         <a href="https://www.findsmiley.dk/1517070" target="blank" rel="noopener">
-                            <img src="@/assets/footer-kontrol.gif" alt="Kontrol til rapport" class="footer__image"> 
+                            <img src="@/assets/footer-kontrol.webp" alt="Kontrol til rapport" class="footer__image"> 
                         </a>
                     </div>
                 </div>

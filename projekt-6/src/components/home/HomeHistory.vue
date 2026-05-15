@@ -15,7 +15,7 @@
 
             <div class="home-history__wrapper">
               <div class="square-top-right"></div>
-              <img src="@/assets/home-jesper.jpg" alt="Jesper i forklæde">
+              <img src="@/assets/home-jesper.webp" alt="Jesper i forklæde">
               <div class="square-bottom-left"></div>
             </div>
         </div>
