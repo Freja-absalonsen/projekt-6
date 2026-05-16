@@ -1,15 +1,7 @@
 <template>
     <section class="home-info">
         <div class="home-info__hero">
-        <!--
-            <iframe
-                class="home-info__video"
-                src="https://www.youtube.com/embed/gOneACBnfNY?autoplay=1&mute=1&loop=1&playlist=gOneACBnfNY&controls=0&playsinline=1"
-                frameborder="0"
-                allow="autoplay; encrypted-media"
-                allowfullscreen
-            ></iframe>
-        -->
+
         <video 
             autoplay 
             muted 
@@ -19,9 +11,6 @@
             <source src="https://res.cloudinary.com/dnx8dt5jn/video/upload/v1778171889/Optagelse_2026-05-07_182132_ijaua8.mp4" type="video/mp4">
         </video>
         </div>
-
-
-        
 
         <div class="home-info__content">
             <h1 class="home-info__title">Nær mikrobageri</h1>

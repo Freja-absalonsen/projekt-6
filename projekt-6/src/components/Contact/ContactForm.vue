@@ -10,7 +10,6 @@ const form = ref({
   message: ''
 })
 
-const requiredError = ref('')
 const emailError = ref('')
 const phoneError = ref('')
 const nameError = ref('')
@@ -22,6 +21,8 @@ const messageError = ref('')
 async function handleSubmit() {
   
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+  //const emailRegex = /^[\p{L}0-9._%+-]+@[^\s@]+\.[^\s@]+$/u;
+  //const emailRegex = /^[a-zA-Z0-9æøåÆØÅ._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   const phoneRegex = /^(\+45)?\s?\d{2}\s?\d{2}\s?\d{2}\s?\d{2}$/
 
   emailError.value = ''
@@ -31,13 +32,13 @@ async function handleSubmit() {
 
   let hasError = false
 
- if (!form.value.name) {
+ if (!form.value.name.trim()) {
     nameError.value = 'Indtast dit navn'
     hasError = true
   }
 
   if (!form.value.email) {
-    emailError.value = 'Indtast en email'
+    emailError.value = 'Indtast din email'
     hasError = true
   } else if (!emailRegex.test(form.value.email)) {
     emailError.value = 'Indtast en gyldig email'
@@ -45,14 +46,14 @@ async function handleSubmit() {
   }
 
   if (!form.value.phone) {
-    phoneError.value = 'Indtast et telefonnummer'
+    phoneError.value = 'Indtast dit telefonnummer'
     hasError = true
   } else if (!phoneRegex.test(form.value.phone)) {
     phoneError.value = 'Ugyldigt telefonnummer'
     hasError = true
   }
 
-  if (!form.value.message) {
+  if (!form.value.message.trim()) {
     messageError.value = 'Skriv en meddelelse'
     hasError = true
   }

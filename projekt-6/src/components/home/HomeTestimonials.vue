@@ -30,9 +30,9 @@ const testimonials = [
     { text: 'Jeg bliver altid mødt af et stort smil af medarbejderne i bageriet', author:'Elias'},
     { text: 'Bedste surdejsbrød i Odense!', author:'Sofie'},
     { text: 'Fantastisk kaffe og hyggelige stemning', author:'Mikkel'},
-    { text: 'Man kan virkelig smage håndværket', author:'Line'},
+    { text: 'Man kan virkelig smage håndværket', author:'BATMAN'},
     { text: 'Mit faste stop hver weekend', author:'Jonas'},
-    { text: 'Lækre kager og altid god service', author:'Camiliia'},
+    { text: 'Lækre kager og altid god service', author:'Camilla'}
 ]
 
 const slidesPerView = 2
